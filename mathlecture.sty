@@ -1,0 +1,71 @@
+\NeedsTexFormat{LaTeX2e}
+\ProvidesPackage{mathlecture}[2024/06/10 v0.1 Math Lecture Package]
+
+
+%==========1. 加载必要的包==========
+\RequirePackage{amsmath,amsthm,amssymb} % AMS 数学宏包
+\RequirePackage{xcolor} 
+\RequirePackage{geometry} 
+
+
+%==========2. 选项处理 ==========
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions{
+    family=mathlecture,
+    prefix=mathlecture@
+}
+
+
+% 声明选项
+\DeclareBoolOption{student}          % 学生版/教师版
+\DeclareStringOption[blue]{maincolor} % 主色调
+\DeclareBoolOption{framed}           % 是否加框
+
+% 处理选项
+\ProcessKeyvalOptions{mathlecture}
+
+%==========3. 包的核心功能 ==========
+
+% 根据选项设置颜色
+\ifdefined\mathlecture@maincolor
+    \colorlet{mathmain}{\mathlecture@maincolor}
+\else
+    \colorlet{mathmain}{blue}
+\fi
+
+% 设置页面布局
+\geometry{
+    a4paper,
+    left=3.5cm,
+    right=3.5cm,
+    top=3.5cm,
+    bottom=3.5cm,
+    headheight=15pt,
+    headsep=20pt,
+    footskip=30pt
+}
+
+% ==========4. 定义数学环境 ==========
+\theoremstyle{definition}
+\newtheorem{definition}{定义}[section]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{corollary}{推论}[section]
+\newtheorem{proposition}{命题}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{注}[section]
+
+% ==========5. 其他自定义命令 ==========
+\newcommand{\R}{\mathbb{R}} % 实数集
+\newcommand{\N}{\mathbb{N}} % 自然数集
+\newcommand{\Z}{\mathbb{Z}} % 整数集
+\newcommand{\Q}{\mathbb{Q}} % 有理数集
+\newcommand{\C}{\mathbb{C}} % 复数集
+
+% 微分符号
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+
+\endinput

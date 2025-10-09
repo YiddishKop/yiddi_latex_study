@@ -1,0 +1,471 @@
+\documentclass[a4paper,fontsize=8pt]{kaobook}
+
+%------------------------------------------
+%       Packages
+%------------------------------------------
+\usepackage{amsmath,amssymb} % Math packages
+\usepackage{physics} % Physics package
+\usepackage{tcolorbox} % For colored boxes
+\usepackage{xcolor}
+\usepackage[UTF8]{ctex}
+\usepackage[framed, theorembackground=blue!10]{kaotheorems}
+%\usepackage{kaotheorems} % Theorem environments
+\setCJKmainfont{Source Han Serif SC}
+
+%------------------------------------------
+%==Colour Palette==
+%------------------------------------------
+\definecolor{merah}{HTML}{F4564E}
+\definecolor{merahtua}{HTML}{89313E}
+\definecolor{biru}{HTML}{60BBE5}
+\definecolor{birutua}{HTML}{412F66}
+\definecolor{hijau}{HTML}{59CC78}
+\definecolor{hijautua}{HTML}{366D5B}
+\definecolor{kuning}{HTML}{FFD56B}
+\definecolor{jingga}{HTML}{FBA15F}
+\definecolor{ungu}{HTML}{8C5FBF}
+\definecolor{lavender}{HTML}{CBA5E8}
+\definecolor{merjamb}{HTML}{FFB6E0}
+
+
+\definecolor{1}{RGB}{163,187,219}
+\definecolor{2}{RGB}{239,239,239}
+
+\definecolor{3}{RGB}{65,222,183}
+\definecolor{4}{RGB}{237,241,187}
+
+\definecolor{5}{RGB}{129,227,247}
+\definecolor{6}{RGB}{236,239,244}
+
+\definecolor{7}{RGB}{195,217,78}
+\definecolor{8}{RGB}{245,243,242}
+
+\definecolor{9}{RGB}{240,145,161}
+\definecolor{10}{RGB}{245,242,233}
+
+
+\definecolor{mycolor1}{RGB}{185,227,251}
+\definecolor{mycolor2}{RGB}{252,204,203}
+\definecolor{mycolor3}{RGB}{250,230,233}
+\definecolor{mycolor4}{RGB}{220,238,248}
+\definecolor{mycolor5}{RGB}{131,203,172}
+\definecolor{mycolor6}{RGB}{185,222,201}
+\definecolor{mycolor7}{RGB}{233,215,223}
+\definecolor{mycolor8}{RGB}{200,173,196}
+\definecolor{mycolor9}{RGB}{92,197,204}
+\definecolor{mycolor10}{RGB}{236,138,164}
+
+
+
+
+%------------------------------------------
+%      Document Information 
+%------------------------------------------ 
+\title{yiddishkop latex 学习一 --- 数学表达式}
+\author{John Doe}
+\date{\today}
+
+
+%------------------------------------------
+%      Document
+%------------------------------------------
+
+\begin{document}
+
+\maketitle
+\chapter{数学公式}
+
+\section{三种基本公式}
+这是一个行内公式： $E=mc^2$
+
+这是一个居中公式：
+\[
+    E=mc^2
+\]
+
+这是一个带编号的居中公式：
+\begin{equation}
+    E=mc^2
+\end{equation}
+
+\section{多行公式对齐}
+
+解方程过程：
+\begin{align}
+2x + 3y &= 6 \\
+2x &=4\\
+x &=2
+\end{align}
+
+二项式公式：
+\begin{align}
+    (a+b)^2 &= a^2 + 2ab + b^2 \\
+    (a-b)^2 &= a^2 - 2ab + b^2 \\
+    (a+b)(a-b) &= a^2 - b^2
+\end{align}
+
+
+
+\section{居中对齐的多行公式}
+
+\begin{gather}
+    E=mc^2 \\
+    F=ma \\
+    a^2 + b^2 = c^2
+\end{gather}
+
+
+\section{多列对齐的公式}
+
+\begin{alignat}{2}
+    x &= y & \quad & \text{(由条件1)} \\
+    a &= b &       & \text{(由条件2)} \\
+    m &= n &       & \text{(由条件3)}
+\end{alignat}
+
+
+
+\section{矩阵表示}
+
+无括号矩阵：
+\[
+\begin{matrix}
+    a & b \\
+    c & d
+\end{matrix}
+\]
+
+圆括号矩阵：
+\[
+\begin{pmatrix}
+    a & b \\
+    c & d
+\end{pmatrix}
+\]
+
+方括号矩阵：
+\[
+\begin{bmatrix}
+    a & b \\
+    c & d  
+\end{bmatrix}
+\]
+
+
+行列式：
+\[
+\begin{vmatrix}
+    a & b \\
+    c & d
+\end{vmatrix}
+= ad - bc
+\]
+
+大括号矩阵：
+\[
+\begin{Bmatrix}
+    a & b \\
+    c & d
+\end{Bmatrix}
+\]
+
+
+\section{分块矩阵}
+\[
+\left[
+\begin{array}{cc|c}
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    \hline
+    7 & 8 & 9
+\end{array}
+\right]
+\]
+
+
+或者是用 pmatrix 环境：
+\[
+\begin{pmatrix}
+    A & B \\
+    C & D  
+\end{pmatrix}
+\]
+
+
+
+\section{分段函数}
+
+绝对值函数：
+\[
+|x| = 
+\begin{cases}
+    x & \text{如果 } x \geq 0 \\
+    -x & \text{如果 } x < 0
+\end{cases}
+\]
+
+符号函数：
+\[
+\operatorname{sgn}(x) =
+\begin{cases}
+    1 & \text{当 } x > 0 \\
+    0 & \text{当 } x = 0 \\
+    -1 & \text{当 } x < 0
+\end{cases}
+\]
+
+阶梯函数：
+\[
+f(x) =
+\begin{cases}
+    x^2 & \text{对于} x \leq 0 \\
+    \sqrt{x} & \text{对于 } x > 0
+\end{cases}
+\]
+
+
+
+\section{定理环境使用}
+
+这是一个定义：
+\begin{definition}[平行四边形]
+    如果一个四边形的两组对边分别平行，那么这个四边形就是一个平行四边形。
+\end{definition}
+
+
+这是一个定理：
+\begin{theorem}[平行四边形性质]
+    在平行中:
+    \begin{enumerate}
+        \item 对边相等
+        \item 对角相等
+        \item 对角线互相平分
+    \end{enumerate}
+\end{theorem}
+
+
+这是一个证明：
+\begin{proof}
+    设平行四边形 $ABCD$, 连接对角线 $AC$.
+    在 $\triangle ABC$ 和 $\triangle CDA$ 中:
+    \begin{align*}
+        \angle BAC &= \angle DCA & \text{(对顶角)} \\
+        \angle BCA &= \angle CDA & \text{(对顶角)} \\
+        AB &= CD & \text{(对边相等)}
+    \end{align*}
+
+    因此 $\triangle ABC \cong \triangle CDA$ (ASA), 所以 $AC$ 平分 $\angle BAD$ 和 $\angle BCD$.
+\end{proof}
+
+这是一个证明（使用 alignat）
+\begin{proof}
+    设平行四边形 $ABCD$, 连接对角线 $AC$.
+    在 $\triangle ABC$ 和 $\triangle CDA$ 中:
+    \begin{alignat}{2}
+        \angle BAC &= \angle DCA & \quad &\text{(对顶角)} \\
+        \angle BCA &= \angle CDA &       &\text{(对顶角)} \\
+        AB &= CD &                       &\text{(对边相等)}
+    \end{alignat}
+
+    因此 $\triangle ABC \cong \triangle CDA$ (ASA), 所以 $AC$ 平分 $\angle BAD$ 和 $\angle BCD$.
+\end{proof}
+
+
+
+这是一个例子：
+\begin{example}
+    设 $ABCD$ 是一个平行四边形，证明 $AB \parallel CD$.
+\end{example}
+
+
+这是一个答案：
+\begin{theorem}
+    由于 $ABCD$ 是平行四边形，定义中已经说明 $AB \parallel CD$.
+    \begin{align*}
+        \angle C &= \angle A & \text{(对顶角)} \\
+        \angle B &= \angle D=180^\circ -65^\circ=115^\circ & \text{(对顶角)}
+    \end{align*}
+\end{theorem}
+
+
+\chapter{数学符号和特殊字体}
+
+\section{数学字体}
+普通字体： $a, b, c, x, y, z$
+
+黑板粗体： $\mathbb{ABC}$ 用于数集: $\mathbb{R}, \mathbb{X}, \mathbb{Z}, \mathbb{N}, \mathbb{Q}, \mathbb{C}$
+
+手写体：$\mathcal{ABC}$, $\mathscr{ABC}$
+
+无衬线体：$\mathsf{ABCabcxyz}$
+
+打字机体：$\mathtt{ABCabcxyz}$
+
+
+\section{常用数学符号}
+数集：$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$
+
+运算符：$\pm, \mp, \times, \div, \cdot, \ast, \star$
+
+关系符：$\sim, \approx, \simeq, \cong, \equiv, \propto$
+
+箭头：$\to, \rightarrow, \leftarrow, \Rightarrow, \Leftrightarrow, \mapsto$
+
+几何符号：$\angle, \triangle, \square, \parallel, \perp, \cong$
+
+
+\begin{tcolorbox}[enhanced,colback=gray!5,colframe=gray!75,breakable,coltitle=green!25!black,title=2024]
+ 设 $ \boldsymbol{x}^{(k)} \in \mathbf{R}^{n}, k=0,1,2, \cdots, \boldsymbol{x}^{*} \in \mathbf{R}^{n}, \boldsymbol{B} \in \mathbf{R}^{n \times n} $.
+
+(1) 给出向量序列 $ \boldsymbol{x}^{(k)}(k=0,1,2, \cdots) $ 收敛于向量 $ \boldsymbol{x}^{*} $ 的定义;
+
+(2) 设 $ \lim\limits _{k \rightarrow \infty} \boldsymbol{x}^{(k)}=\boldsymbol{x}^{*} $, 证明: $ \lim\limits _{k \rightarrow \infty} B \boldsymbol{x}^{(k)}=\boldsymbol{B} \boldsymbol{x}^{*} $.
+
+ \tcblower
+
+设 $ \|\cdot\| $ 为 $ \mathbf{R}^{n} $ 中的一种范数.
+
+(1) 如果
+$$
+\lim _{k \rightarrow \infty}\left\|\boldsymbol{x}^{(k)}-x^{*}\right\|=0,
+$$
+则称向量序列 $ \left\{\boldsymbol{x}^{(k)}\right\}_{k=0}^{\infty} $ 收敛于向量 $ \boldsymbol{x}^{*} $.
+
+(2) 因 $ \lim\limits _{k \rightarrow \infty} x^{(k)}=x^{*} $, 则 $ \lim\limits _{k \rightarrow \infty}\left\|x^{(k)}-x^{*}\right\|=0 $. 又
+$$
+\left\|\boldsymbol{B} \boldsymbol{x}^{(k)}-\boldsymbol{B} \boldsymbol{x}^{*}\right\|=\left\|\boldsymbol{B}\left(\boldsymbol{x}^{(k)}-\boldsymbol{x}^{*}\right)\right\| \leqslant\|\boldsymbol{B}\| \cdot\left\|\boldsymbol{x}^{(k)}-\boldsymbol{x}^{*}\right\|,
+$$
+所以
+$$
+\begin{aligned}
+\lim _{k \rightarrow \infty}\left\|\boldsymbol{B} \boldsymbol{x}^{(k)}-\boldsymbol{B} \boldsymbol{x}^{*}\right\| & \leqslant \lim _{k \rightarrow \infty}\|\boldsymbol{B}\| \cdot\left\|\boldsymbol{x}^{(k)}-\boldsymbol{x}^{*}\right\| \\
+& =\|\boldsymbol{B}\| \lim _{k \rightarrow \infty}\left\|\boldsymbol{x}^{(k)}-\boldsymbol{x}^{*}\right\|=0,
+\end{aligned}
+$$
+所以 $ \lim\limits _{k \rightarrow \infty} B \boldsymbol{x}^{(k)}=\boldsymbol{B} \boldsymbol{x}^{*} $.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced,colback=green!10!white,colframe=green!50!white,breakable,coltitle=green!25!black,title=2024]
+1. 解方程 $ 12-3 x+2 \cos x=0 $ 的迭代格式为 $ x_{n+1}=4+\frac{2}{3} \cos x_{n} $.
+
+(1) 证明: 对任意 $ x_{0} \in \mathbf{R} $, 均有 $ \lim\limits _{n \rightarrow \infty} x_{n}=x^{*} $ ( $ x^{*} $ 为方程的根);
+
+(2) 此迭代法的收敛阶是多少?
+ \tcblower
+ (1) 迭代函数 $ \varphi(x)=4+\frac{2}{3} \cos x $, 对任意 $ x \in \mathbf{R} $
+
+$$
+4-\frac{2}{3} \leqslant 4+\frac{2}{3} \cos x \leqslant 4+\frac{2}{3},\quad x \in(+\infty,-\infty)
+$$
+$$
+\varphi(x) \in\left[4-\frac{2}{3}, 4+\frac{2}{3}\right] \subset(-\infty,+\infty) \\
+$$
+又因为：
+$$
+\varphi^{\prime}(x)=-\frac{2}{3} \sin x, \quad L=\max _{-\infty<x<\infty}\left|\varphi^{\prime}(x)\right|=\frac{2}{3}<1
+$$
+
+故迭代公式在 $ (-\infty, \infty) $ 满足收敛性定理, 即 $ \left\{x_{k}\right\} $ 收敛于方程的根 $ x^{*} $.
+
+(2) 由
+$$
+\lim _{k \rightarrow \infty} \frac{x^{*}-x_{k+1}}{x^{*}-x_{k}}=\lim _{k \rightarrow \infty} \frac{\varphi\left(x^{*}\right)-\varphi\left(x_{k}\right)}{x^{*}-x_{k}}=\varphi^{\prime}\left(x^{*}\right)=-\frac{2}{3} \sin x^{*} \neq 0
+$$
+可知迭代线性收敛.
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced,colback=blue!8!white,colframe=blue!25!white,breakable,title=2024]
+
+设 $ A $ 为 $ n $ 阶非奇异矩阵且有分解式 $ A=L U $, 其中 $ L $ 是单位下三角阵, $ U $ 为上三角阵, 求证 $ A $ 的所有顺序主子式均不为零.
+\tcblower
+证明: 由题意可知, 若将 $ A=L U $ 分解式中的 $ L $ 与 $ U $ 分块
+$$
+L=\left[\begin{array}{cc}
+L_{k \times k} & 0_{k \times(n-k)} \\
+L_{(n-k) \times k} & L_{(n-k) \times(n-k)}
+\end{array}\right], \quad U=\left[\begin{array}{cc}
+U_{k \times k} & U_{k \times(n-k)} \\
+0_{(n-k) \times k} & U_{(n-k) \times(n-k)}
+\end{array}\right]
+$$
+
+其中, $ L_{k \times k} $ 为 $ k $ 阶单位下三角阵, $ U_{k \times k} $ 为 $ k $ 阶上三角阵, 则 $ A $ 的 $ k $ 阶顺序主子式为 $ A_{k}=L_{k \times k} U_{k \times k} $, 又由 $ A $ 为 $ n $ 阶非奇异矩阵, 因此 $ |A|=a_{11}^{(1)} a_{22}^{(2)} \cdots a_{n n}^{(n)} \neq 0 $,则
+$$
+\left|A_{k}\right|=\left|L_{k \times k}\right| \cdot\left|U_{k \times k}\right|=a_{11}^{(1)} a_{22}^{(2)} \cdots a_{k k}^{(k)} \neq 0
+$$
+证得 $ A $ 的所有顺序主子式均不为零.
+
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[breakable,enhanced,arc=0mm,outer arc=0mm,
+		boxrule=0pt,toprule=1pt,leftrule=0pt,bottomrule=1pt, rightrule=0pt,left=0.2cm,right=0.2cm,
+		titlerule=0.5em,toptitle=0.1cm,bottomtitle=-0.1cm,top=0.2cm,
+		colframe=white!10!biru,colback=white!90!biru,coltitle=white,
+            coltext=black,title =2024-03-05, title style={white!10!biru}, before skip=8pt, after skip=8pt,before upper=\hspace{2em},
+		fonttitle=\bfseries,fontupper=\normalsize]
+  
+4. 为了使 $ \sqrt{11} $ 的近似值的相对误差不超过 $ 0.1 \% $, 至少应取几位有效数字
+ \tcblower
+ 设近似数 $ x^{*} $ 表示为
+$$
+x^{*}= \pm 10^{m} \times\left(a_{1}+a_{2} \times 10^{-1}+\cdots+a_{l} \times 10^{-(l-1)}\right),
+$$
+其中 $ a_{i}(i=1,2, \cdots, l) $ 是 0 到 9 中的一个数字, $ a_{1} \neq 0, m $ 为整数. 若 $ x^{*} $ 具有 $ n $ 位有效数字,则其相对误差限
+$$
+\varepsilon_{r}^{*} \leqslant \frac{1}{2 a_{1}} \times 10^{-(n-1)} 
+$$
+
+设取 $ n $ 位有效数字, 由上可知 $ \varepsilon_{r}^{*} \leqslant \frac{1}{2 a_{1}} \times 10^{-n+1} $. 由于 $ \sqrt{11}=3.3\cdots $,知 $ a_{1}=3 $, 
+
+$$
+\varepsilon_{r}\left(x^{*}\right) \leqslant \frac{1}{2 a_{1}} \times 10^{1-n}=\frac{1}{6} \times 10^{(1-n)}
+$$
+
+根据题意我们有 $ \frac{1}{6} \times 10^{1-n} \leqslant 0.1 \% $, 解得 $ n \geqslant 3.22 $, 故取$n=4$,即只要对 $ \sqrt{11} $ 的近似值取 4 位有效数字, 其相对误差限就小于 $ 0.1 \% $. 
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[breakable,
+		colframe=white!10!jingga, 
+        coltitle=white!90!jingga, 
+        colback=white!95!jingga, 
+        coltext=black, 
+        colbacktitle=white!10!jingga, 
+        enhanced, 
+        fonttitle=\bfseries,
+        fontupper=\normalsize, 
+        attach boxed title to top left={yshift=-2mm}, 
+        before skip=8pt, 
+        after skip=8pt,
+		title=填空题]
+ 
+
+1. 证明: 求解常微分方程初值问题的改进 Euler 方法具有$\underline{\hspace{1cm}}$阶精度.
+    
+2. 已知 $ f(2)=3, f(3)=5, f(5)=4 $, 则函数 $ f(x) $ 在此三点的插值多项式为$\underline{\hspace{1cm}}$.
+
+2. 设 $ A=\left(\begin{array}{ll}1 & 1 \\ 0 & 1\end{array}\right) $, 则 $ \operatorname{cond}_{1}(A)= \underline{\hspace{1cm}}$
+
+4. 迭代法 $ X^{(k+1)}=B X^{(k)}+f $ 求解线性方程组对任意 $ X^{(0)} $ 和 $ f $ 均收敛的充要条件为$\underline{\hspace{1cm}}$
+
+5. 定积分的 Simpson 数值求积公式具有$\underline{\hspace{1cm}}$次代数精度.
+\end{tcolorbox}
+
+
+
+\begin{tcolorbox}[breakable,
+		colframe=white!10!jingga, coltitle=white!90!jingga, colback=white!95!jingga, coltext=black, colbacktitle=white!10!jingga, enhanced, fonttitle=\bfseries,fontupper=\normalsize, attach boxed title to top left={yshift=-2mm}, before skip=8pt, after skip=8pt,
+		title=解答题]
+
+
+  证明: 当 $ x_{0}=1.5 $ 时, 迭代法 $ x_{k+1}=\sqrt{\frac{10}{4+x_{k}}} $ 收敛于方程 $ f(x)=x^{3}+4 x^{2}-10=0 $ 在区间 $ [1,2] $ 内唯一实根 $ x^{*} $.
+
+   \tcblower
+
+首先，我们建立迭代公式：
+\end{tcolorbox}
+
+
+\end{document}

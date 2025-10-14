@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.12)  10 OCT 2025 03:02
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.12)  13 OCT 2025 14:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**main_bak
-(./main_bak.tex
+**main_bak2
+(./main_bak2.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (./kaobook.cls
@@ -35,9 +35,9 @@ Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `toc' on input line 135.
-Class scrbook Info: File `scrsize10pt.clo' used to setup font sizes on input line 2691.
- (e:/texlive/2024/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (10pt)
+Class scrbook Info: File `size8.clo' used to setup font sizes on input line 2691.
+ (e:/texlive/2024/texmf-dist/tex/latex/extsizes/size8.clo
+File: size8.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 ) (e:/texlive/2024/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
 \ta@bcor=\skip49
@@ -52,22 +52,36 @@ Package typearea Info: You've used standard option `a4paper'.
 \ta@vblk=\skip51
 \ta@temp=\skip52
 \footheight=\skip53
+
+
+Package typearea Warning: DIV for 8.0pt and used papersize
+(typearea)                not defined!
+(typearea)                Using DIV=calc.
+
+DIV calculation for typearea with good linewidth.
+
+Package typearea Warning: Very low DIV value!
+(typearea)                DIV values less than 6 result in textwidth/-height
+(typearea)                smaller than total marginwidth/-height.
+(typearea)                You should e.g. increase DIV, increase fontsize or
+(typearea)                change papersize.
+
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 8
+(typearea)             DIV  = 5
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 373.44246pt
-(typearea)              DIV departure   = -4%
-(typearea)              \evensidemargin = 77.107pt
-(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)              \textwidth      = 239.00317pt
+(typearea)              DIV departure   = 14%
+(typearea)              \evensidemargin = 166.73318pt
+(typearea)              \oddsidemargin  = 47.2316pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 538.0pt
-(typearea)              \topmargin      = 0.36087pt
-(typearea)              \headheight     = 15.0pt
-(typearea)              \headsep        = 18.0pt
-(typearea)              \topskip        = 10.0pt
-(typearea)              \footskip       = 42.0pt
-(typearea)              \baselineskip   = 12.0pt
+(typearea)              \textheight     = 340.5pt
+(typearea)              \topmargin      = 70.6144pt
+(typearea)              \headheight     = 11.875pt
+(typearea)              \headsep        = 14.25pt
+(typearea)              \topskip        = 8.0pt
+(typearea)              \footskip       = 33.25pt
+(typearea)              \baselineskip   = 9.5pt
 (typearea)              on input line 1799.
 )
 \c@part=\count185
@@ -1087,7 +1101,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/LibertinusSerif(1)/b/n on input line 1182.
 LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
-(Font)              scaled to size 10.39993pt on input line 1182.
+(Font)              scaled to size 8.31995pt on input line 1182.
 
 Package fontspec Info: Libertinus Sans scale = 1.
 
@@ -1322,16 +1336,16 @@ Package fontspec Info: Could not resolve font "Libertinus Math/B" (it probably
 
 Package fontspec Info: Font family 'LibertinusMath(1)' created for font
 (fontspec)             'Libertinus Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9-},{Size=7-9,Font=Libertinus
-(fontspec)             Math,Style=MathScript},{Size=-7,Font=Libertinus
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=7.2-},{Size=5.6-7.2,Font=Libertinus
+(fontspec)             Math,Style=MathScript},{Size=-5.6,Font=Libertinus
 (fontspec)             Math,Style=MathScriptScript}}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <9->"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;"<7-9>"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7>"Libertinus
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <7.2->"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"<5.6-7.2>"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-5.6>"Libertinus
 (fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
@@ -1362,39 +1376,40 @@ Package fontspec Info: Libertinus Math scale = 1.0001.
 
 Package fontspec Info: Font family 'LibertinusMath(2)' created for font
 (fontspec)             'Libertinus Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9-},{Size=7-9,Font=Libertinus
-(fontspec)             Math,Style=MathScript},{Size=-7,Font=Libertinus
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=7.2-},{Size=5.6-7.2,Font=Libertinus
+(fontspec)             Math,Style=MathScript},{Size=-5.6,Font=Libertinus
 (fontspec)             Math,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdjustment={\fontdimen
-(fontspec)             8\font =5.8pt\relax \fontdimen 9\font =4.8pt\relax
-(fontspec)             \fontdimen 10\font =4.7pt\relax \fontdimen 11\font
-(fontspec)             =7.0pt\relax \fontdimen 12\font =4.8pt\relax \fontdimen
-(fontspec)             13\font =3.75pt\relax \fontdimen 14\font =3.75pt\relax
-(fontspec)             \fontdimen 15\font =3.1pt\relax \fontdimen 16\font
-(fontspec)             =2.1pt\relax \fontdimen 17\font =2.1pt\relax \fontdimen
-(fontspec)             18\font =2.3pt\relax \fontdimen 19\font =0.45pt\relax
-(fontspec)             \fontdimen 22\font =2.6pt\relax \fontdimen 20\font
-(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)             8\font =4.64pt\relax \fontdimen 9\font =3.84pt\relax
+(fontspec)             \fontdimen 10\font =3.76pt\relax \fontdimen 11\font
+(fontspec)             =5.6pt\relax \fontdimen 12\font =3.84pt\relax
+(fontspec)             \fontdimen 13\font =3.0pt\relax \fontdimen 14\font
+(fontspec)             =3.0pt\relax \fontdimen 15\font =2.48pt\relax
+(fontspec)             \fontdimen 16\font =1.68pt\relax \fontdimen 17\font
+(fontspec)             =1.68pt\relax \fontdimen 18\font =1.84pt\relax
+(fontspec)             \fontdimen 19\font =0.36pt\relax \fontdimen 22\font
+(fontspec)             =2.08pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9->s*[1.0001]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;"<7-9>s*[1.0001]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7>s*[1.0001]"Libertinus
+(fontspec)             <7.2->s*[1.0001]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"<5.6-7.2>s*[1.0001]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-5.6>s*[1.0001]"Libertinus
 (fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =5.8pt\relax \fontdimen 9\font
-(fontspec)             =4.8pt\relax \fontdimen 10\font =4.7pt\relax \fontdimen
-(fontspec)             11\font =7.0pt\relax \fontdimen 12\font =4.8pt\relax
-(fontspec)             \fontdimen 13\font =3.75pt\relax \fontdimen 14\font
-(fontspec)             =3.75pt\relax \fontdimen 15\font =3.1pt\relax
-(fontspec)             \fontdimen 16\font =2.1pt\relax \fontdimen 17\font
-(fontspec)             =2.1pt\relax \fontdimen 18\font =2.3pt\relax \fontdimen
-(fontspec)             19\font =0.45pt\relax \fontdimen 22\font =2.6pt\relax
-(fontspec)             \fontdimen 20\font =0pt\relax \fontdimen 21\font
-(fontspec)             =0pt\relax 
+(fontspec)             \fontdimen 8\font =4.64pt\relax \fontdimen 9\font
+(fontspec)             =3.84pt\relax \fontdimen 10\font =3.76pt\relax
+(fontspec)             \fontdimen 11\font =5.6pt\relax \fontdimen 12\font
+(fontspec)             =3.84pt\relax \fontdimen 13\font =3.0pt\relax
+(fontspec)             \fontdimen 14\font =3.0pt\relax \fontdimen 15\font
+(fontspec)             =2.48pt\relax \fontdimen 16\font =1.68pt\relax
+(fontspec)             \fontdimen 17\font =1.68pt\relax \fontdimen 18\font
+(fontspec)             =1.84pt\relax \fontdimen 19\font =0.36pt\relax
+(fontspec)             \fontdimen 22\font =2.08pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
 (Font)              `symbols' in the math version `normal' on input line 1182.
@@ -1423,27 +1438,27 @@ Package fontspec Info: Libertinus Math scale = 0.9999.
 
 Package fontspec Info: Font family 'LibertinusMath(3)' created for font
 (fontspec)             'Libertinus Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9-},{Size=7-9,Font=Libertinus
-(fontspec)             Math,Style=MathScript},{Size=-7,Font=Libertinus
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=7.2-},{Size=5.6-7.2,Font=Libertinus
+(fontspec)             Math,Style=MathScript},{Size=-5.6,Font=Libertinus
 (fontspec)             Math,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdjustment={\fontdimen
-(fontspec)             8\font =0.65pt\relax \fontdimen 9\font =1.5pt\relax
-(fontspec)             \fontdimen 10\font =1.5pt\relax \fontdimen 11\font
-(fontspec)             =2.5pt\relax \fontdimen 12\font =6.2pt\relax \fontdimen
-(fontspec)             13\font =0pt\relax }].
+(fontspec)             8\font =0.52pt\relax \fontdimen 9\font =1.2pt\relax
+(fontspec)             \fontdimen 10\font =1.2pt\relax \fontdimen 11\font
+(fontspec)             =2.0pt\relax \fontdimen 12\font =4.96pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9->s*[0.9999]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;"<7-9>s*[0.9999]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7>s*[0.9999]"Libertinus
+(fontspec)             <7.2->s*[0.9999]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"<5.6-7.2>s*[0.9999]"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-5.6>s*[0.9999]"Libertinus
 (fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =0.65pt\relax \fontdimen 9\font
-(fontspec)             =1.5pt\relax \fontdimen 10\font =1.5pt\relax \fontdimen
-(fontspec)             11\font =2.5pt\relax \fontdimen 12\font =6.2pt\relax
+(fontspec)             \fontdimen 8\font =0.52pt\relax \fontdimen 9\font
+(fontspec)             =1.2pt\relax \fontdimen 10\font =1.2pt\relax \fontdimen
+(fontspec)             11\font =2.0pt\relax \fontdimen 12\font =4.96pt\relax
 (fontspec)             \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
@@ -1781,7 +1796,9 @@ Package tocbasic Info: omitting babel extension for `nls'
 \nomlabelwidth=\dimen348
 \nom@tempdim=\dimen349
 \nomitemsep=\skip154
-))) (e:/texlive/2024/texmf-dist/tex/latex/ctex/ctex.sty
+))) (e:/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+) (e:/texlive/2024/texmf-dist/tex/latex/ctex/ctex.sty
 Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaTeX (CTEX)
  (e:/texlive/2024/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
@@ -1928,8 +1945,52 @@ Package fontspec Info: Font family 'SimSun(0)' created for font 'SimSun' with
 
 )) (e:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
-) (e:/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
-Package: physics 
+) (./kaotheorems.sty
+Package: kaotheorems 
+ (e:/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks66
+\thm@bodyfont=\toks67
+\thm@headfont=\toks68
+\thm@notefont=\toks69
+\thm@headpunct=\toks70
+\thm@preskip=\skip164
+\thm@postskip=\skip165
+\thm@headsep=\skip166
+\dth@everypar=\toks71
+)
+Class scrbook Info: amsthm's \deferred@thm@head patched.
+ (e:/texlive/2024/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2023/05/04 v0.76
+\thmt@toks=\toks72
+\c@thmt@dummyctr=\count455
+ (e:/texlive/2024/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2023/05/04 v0.76
+ (e:/texlive/2024/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2023/05/04 v0.76
+\@parsespec=\toks73
+)) (e:/texlive/2024/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2023/05/04 v0.76
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+) (e:/texlive/2024/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2023/05/04 v0.76
+ (e:/texlive/2024/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2023/05/04 v0.76
+)) (e:/texlive/2024/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2023/05/04 v0.76
+) (e:/texlive/2024/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2023/05/04 v0.76
+) (e:/texlive/2024/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2023/05/04 v0.76
+\thmt@style@headstyle=\toks74
+))
+\c@theorem=\count456
+\c@definition=\count457
+\c@assumption=\count458
+\c@remark=\count459
+\c@example=\count460
+\c@exercise=\count461
 )
 
 Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SimSun(0)).
@@ -1954,98 +2015,6 @@ Package fontspec Info: Font family 'SourceHanSerifSC(0)' created for font
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Source Han
 (fontspec)             Serif SC/BI/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-
-
-Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
-(fontspec)             New Roman' with options [Ligatures=TeX].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
-(fontspec)             New
-(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->"Times New
-(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->"Times New
-(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-
-
-Package fontspec Info: Font family 'Arial(0)' created for font 'Arial' with
-(fontspec)             options [Ligatures=TeX].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"Arial/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->"Arial/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"Arial/B/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->"Arial/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"Arial/I/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->"Arial/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->"Arial/BI/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->"Arial/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-
-
-Package fontspec Info: Font family 'Consolas(0)' created for font 'Consolas'
-(fontspec)             with options
-(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"Consolas/OT:script=latn;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"Consolas/B/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"Consolas/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->"Consolas/BI/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
 (e:/texlive/2024/texmf-dist/tex/latex/koma-script/scrhack.sty
 Package: scrhack 2023/07/07 v3.41 KOMA-Script package (hacking other packages)
@@ -2077,40 +2046,40 @@ Package scrhack Info: only `tocbasic' loaded for `nomencl' on input line 79.
 Package scrhack Info: loading setspace hack on input line 199.
  (e:/texlive/2024/texmf-dist/tex/latex/koma-script/setspace.hak
 File: setspace.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package setspace)
-)) (./main_bak.aux)
-\openout1 = `main_bak.aux'.
+))
+No file main_bak2.aux.
+\openout1 = `main_bak2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-Package scrbase Info: activating english \partname on input line 21.
-Package scrbase Info: activating english \chaptername on input line 21.
-Package scrbase Info: activating english \appendixname on input line 21.
-Package scrbase Info: activating english \figurename on input line 21.
-Package scrbase Info: activating english \tablename on input line 21.
-Package scrbase Info: activating english \contentsname on input line 21.
-Package scrbase Info: activating english \listfigurename on input line 21.
-Package scrbase Info: activating english \listtablename on input line 21.
-Package scrbase Info: activating english \bibname on input line 21.
-Package scrbase Info: activating english \indexname on input line 21.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+Package scrbase Info: activating english \partname on input line 73.
+Package scrbase Info: activating english \chaptername on input line 73.
+Package scrbase Info: activating english \appendixname on input line 73.
+Package scrbase Info: activating english \figurename on input line 73.
+Package scrbase Info: activating english \tablename on input line 73.
+Package scrbase Info: activating english \contentsname on input line 73.
+Package scrbase Info: activating english \listfigurename on input line 73.
+Package scrbase Info: activating english \listtablename on input line 73.
+Package scrbase Info: activating english \bibname on input line 73.
+Package scrbase Info: activating english \indexname on input line 73.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -2127,15 +2096,15 @@ Package scrbase Info: activating english \indexname on input line 21.
 * \textheight=591.5271pt
 * \oddsidemargin=-0.5687pt
 * \evensidemargin=35.28197pt
-* \topmargin=-3.86389pt
-* \headheight=15.0pt
+* \topmargin=3.01111pt
+* \headheight=11.875pt
 * \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=112.03273pt
+* \topskip=8.0pt
+* \footskip=33.25pt
+* \marginparwidth=179.25238pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=7.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -2159,15 +2128,15 @@ Package scrbase Info: activating english \indexname on input line 21.
 * \textheight=689.12218pt
 * \oddsidemargin=-1.70752pt
 * \evensidemargin=150.22939pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
+* \topmargin=-37.48274pt
+* \headheight=11.875pt
 * \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
+* \topskip=8.0pt
+* \footskip=33.25pt
 * \marginparwidth=135.71892pt
 * \marginparsep=17.6406pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=7.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -2182,46 +2151,26 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                Using scrlayer-scrpage the head height
 (scrlayer-scrpage)                should be at least \baselineskip, which is
 (scrlayer-scrpage)                16.44145pt currently.
-(scrlayer-scrpage)                But head height is currently 15.0pt only.
+(scrlayer-scrpage)                But head height is currently 11.875pt only.
 (scrlayer-scrpage)                You may use
 (scrlayer-scrpage)                geometry option `head=16.44145pt'
-(scrlayer-scrpage)                or load package `scrlayer-scrpage' with
-(scrlayer-scrpage)                option `singlespacing=true'
-(scrlayer-scrpage)                to avoid this warning.
+(scrlayer-scrpage)                \relax to avoid this warning.
 
-LaTeX Info: Redefining \microtypecontext on input line 21.
-Package microtype Info: Applying patch `item' on input line 21.
-Package microtype Info: Applying patch `toc' on input line 21.
-Package microtype Info: Applying patch `eqnum' on input line 21.
-Package microtype Info: Applying patch `footnote' on input line 21.
-Package microtype Info: Applying patch `verbatim' on input line 21.
+LaTeX Info: Redefining \microtypecontext on input line 73.
+Package microtype Info: Applying patch `item' on input line 73.
+Package microtype Info: Applying patch `toc' on input line 73.
+Package microtype Info: Applying patch `eqnum' on input line 73.
+Package microtype Info: Applying patch `footnote' on input line 73.
+Package microtype Info: Applying patch `verbatim' on input line 73.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `TimesNewRoman' (encoding: TU).
+(microtype)             `LibertinusSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen381
@@ -2239,19 +2188,23 @@ Package caption Info: Fixing longtable code of `floatrow' package.
 Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\@sidenotes@extrawidth=\skip164
-Package hyperref Info: Link coloring ON on input line 21.
- (e:/texlive/2024/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+\@sidenotes@extrawidth=\skip167
+Package hyperref Info: Link coloring ON on input line 73.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+(e:/texlive/2024/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 \flrow@LT@lasthead=\box165
 \flrow@LT@prelastfoot=\box166
-\c@FBLTpage=\count455
+\c@FBLTpage=\count462
 )
-\c@lstlisting=\count456
+\c@lstlisting=\count463
 Package tocbasic Info: omitting babel extension for `lol'
-(tocbasic)             because of missing \bbl@set@language on input line 21.
+(tocbasic)             because of missing \bbl@set@language on input line 73.
 
-No file main_bak.toc.
+No file main_bak2.toc.
 (e:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (e:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -2263,11 +2216,10 @@ Package scrhack Info: loading lscape hack on input line 77.
  (e:/texlive/2024/texmf-dist/tex/latex/koma-script/lscape.hak
 File: lscape.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package lscape)
 Package scrhack Info: \landscape patched to make \textheight change optional on input line 90.
-\scrh@LT@textheight=\skip165
+\scrh@LT@textheight=\skip168
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 ))
-chapter 1.
 
 Package fontspec Info: Could not resolve font "Microsoft YaHei Bold/I" (it
 (fontspec)             probably doesn't exist).
@@ -2276,28 +2228,12 @@ Package fontspec Info: Could not resolve font "Microsoft YaHei Bold/I" (it
 Package fontspec Info: Could not resolve font "Microsoft YaHei/I" (it probably
 (fontspec)             doesn't exist).
 
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/m/n' will be
+(Font)              scaled to size 10.53937pt on input line 76.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `Arial' (encoding: TU).
+(microtype)             `LibertinusSans' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/Arial(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/Arial(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/Arial(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/Arial(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/Arial(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/Arial(0)/m/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
 
 Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
 (fontspec)             'Microsoft YaHei' with options
@@ -2316,149 +2252,276 @@ Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
 (fontspec)             YaHei/BI/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/Arial(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/22.08249'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
+(Font)              scaled to size 10.53937pt on input line 76.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
+(Font)              scaled to size 22.08249pt on input line 76.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 15.65839pt on input line 76.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusMath' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 10.54048pt on input line 25.
+(Font)              scaled to size 15.05785pt on input line 76.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 25.
+(Font)              scaled to size 12.04628pt on input line 76.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 25.
+(Font)              scaled to size 9.0347pt on input line 76.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 10.53824pt on input line 25.
+(Font)              scaled to size 15.05463pt on input line 76.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 25.
+(Font)              scaled to size 12.0437pt on input line 76.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
-(e:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              scaled to size 9.03276pt on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+ (e:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (e:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
  (e:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (e:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 36.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-\openout4 = `main_bak.mw'.
+\openout4 = `main_bak2.mw'.
 
  [1
 
 
 
 
-] (./main_bak.mw)
-\openout4 = `main_bak.mw'.
+] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
 
- (./main_bak.aux)
+\openout4 = `main_bak2.mw'.
+
+ [2
+
+
+] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+
+chapter 1.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 22.96564pt on input line 76.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/b/n' will be
+(Font)              scaled to size 22.96564pt on input line 76.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
+(Font)              scaled to size 15.05624pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/b/n' will be
+(Font)              scaled to size 15.65839pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 10.54048pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 10.53824pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 7.27995pt on input line 124.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 5.19997pt on input line 124.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/sl' in size <10.53937> not available
+(Font)              Font shape `TU/LibertinusSerif(0)/m/it' tried instead on input line 124.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/it' will be
+(Font)              scaled to size 10.96086pt on input line 124.
+\openout4 = `main_bak2.mw'.
+
+[3] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+\openout4 = `main_bak2.mw'.
+
+ [4] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/m/n' will be
+(Font)              scaled to size 10.96086pt on input line 209.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/m/n' will be
+(Font)              scaled to size 7.27995pt on input line 209.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/m/n' will be
+(Font)              scaled to size 5.19997pt on input line 209.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/b/n' will be
+(Font)              scaled to size 10.96086pt on input line 231.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 231.
+
+
+LaTeX Font Warning: Font shape `TU/SourceHanSerifSC(0)/m/it' undefined
+(Font)              using `TU/SourceHanSerifSC(0)/m/n' instead on input line 232.
+
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 237.
+\openout4 = `main_bak2.mw'.
+
+[5] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 277.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/it' will be
+(Font)              scaled to size 7.27995pt on input line 287.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/it' will be
+(Font)              scaled to size 5.19997pt on input line 287.
+\openout4 = `main_bak2.mw'.
+
+ [6] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+
+chapter 2.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(1)/m/n' will be
+(Font)              scaled to size 10.53937pt on input line 300.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 300.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 300.
+LaTeX Font Info:    Font shape `TU/LiberationMono(1)/m/n' will be
+(Font)              scaled to size 9.38002pt on input line 302.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LiberationMono' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/LiberationMono(1)/m/n' will be
+(Font)              scaled to size 6.23pt on input line 302.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/LiberationMono(1)/m/n' will be
+(Font)              scaled to size 4.45pt on input line 302.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/LiberationMono(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+
+LaTeX Font Warning: Font shape `TU/LibertinusMath(1)/b/n' undefined
+(Font)              using `TU/LibertinusMath(1)/m/n' instead on input line 318.
+
+
+LaTeX Font Warning: Font shape `TU/LibertinusMath(2)/b/n' undefined
+(Font)              using `TU/LibertinusMath(2)/m/n' instead on input line 318.
+
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/b/n' will be
+(Font)              scaled to size 7.00075pt on input line 318.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/b/n' will be
+(Font)              scaled to size 5.00053pt on input line 318.
+
+LaTeX Font Warning: Font shape `TU/LibertinusMath(3)/b/n' undefined
+(Font)              using `TU/LibertinusMath(3)/m/n' instead on input line 318.
+
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/b/n' will be
+(Font)              scaled to size 6.99925pt on input line 318.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/b/n' will be
+(Font)              scaled to size 4.99947pt on input line 318.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/b/n' will be
+(Font)              scaled to size 10.96086pt on input line 318.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/b/n' will be
+(Font)              scaled to size 7.27995pt on input line 318.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/b/n' will be
+(Font)              scaled to size 5.19997pt on input line 318.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/b/n' will be
+(Font)              scaled to size 10.54048pt on input line 318.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/b/n' will be
+(Font)              scaled to size 10.53824pt on input line 318.
+\openout4 = `main_bak2.mw'.
+
+[7
+
+
+] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+\openout4 = `main_bak2.mw'.
+
+ [8] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+\openout4 = `main_bak2.mw'.
+
+ [9] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+\openout4 = `main_bak2.mw'.
+
+ [10] (./main_bak2.mw)
+\openout4 = `main_bak2.mw'.
+
+ (./main_bak2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 56267 strings out of 476668
- 1208812 string characters out of 5799241
- 1987577 words of memory out of 5000000
- 77279 multiletter control sequences out of 15000+600000
- 563329 words of font info for 153 fonts, out of 8000000 for 9000
+ 57540 strings out of 476668
+ 1241670 string characters out of 5799241
+ 2026042 words of memory out of 5000000
+ 78479 multiletter control sequences out of 15000+600000
+ 567235 words of font info for 169 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 129i,17n,159p,10900b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,18n,159p,10901b,1295s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_bak.pdf (1 page).
+Output written on main_bak2.pdf (10 pages).

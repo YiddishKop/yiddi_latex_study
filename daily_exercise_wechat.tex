@@ -1,0 +1,163 @@
+%================= 社交媒体每日一题 · 美观海报模板 =================
+% 编译：xelatex main.tex   （推荐）
+% 导出：magick -density 300 main.pdf -quality 95 main_1080x1350.png
+% 版式：1080×1350（可改为 1080×1080 方图，见 \geometry）
+\documentclass[11pt]{article}
+
+% -------- 基础与页面尺寸 --------
+\usepackage[
+  paperwidth=1080pt, paperheight=1350pt,  % 竖版 4:5
+  left=64pt, right=64pt, top=72pt, bottom=84pt
+]{geometry}
+\usepackage{graphicx,xcolor}
+\usepackage{tikzpagenodes}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing,positioning,calc}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% -------- 中文与字体：用 XeLaTeX/LuaLaTeX 编译 --------
+\usepackage[UTF8,scheme=plain]{ctex} % 纯手动设字
+\usepackage{fontspec}
+% 让 fontspec 在 fonts/ 下找字体文件
+\defaultfontfeatures{ Path = fonts/ }  % 相对 main.tex 的路径
+% === 中文主字体（优先思源宋/苹方/冬青黑；按你机器上安装情况择一）===
+% 宋体风格（题干优雅）：推荐 Noto Serif SC / Source Han Serif SC
+\setCJKmainfont[
+  BoldFont = {SOURCESERIFPRO-BOLD},
+  ItalicFont = {SOURCESERIFPRO-REGULARIT}
+]{NotoSerifSC-Regular}
+% 无衬线中文（配副标题/标签）：推荐 Noto Sans SC / Source Han Sans SC
+\setCJKsansfont{NotoSerifSC-Regular}
+% 英文/数字
+\setmainfont[
+  Ligatures = TeX,
+  BoldFont  = {LibreCaslonText-Bold},
+  ItalicFont= {LibreCaslonText-Italic}
+]{LibreCaslonText-Regular} % 优雅的标题英文
+\setsansfont{Inter-VariableFont_opsz,wght}  % 干净现代的无衬线
+
+% -------- 微排版 --------
+\usepackage[final]{microtype}
+
+% -------- 配色（可按品牌替换） --------
+\definecolor{BrandBlue}{HTML}{165DFF}
+\definecolor{Sea}{HTML}{19C3FF}
+\definecolor{DeepSea}{HTML}{0C2A4A}
+\definecolor{Sunset}{HTML}{66D1FF}
+\definecolor{Ink}{HTML}{0B1221}
+\definecolor{CardBG}{HTML}{F7FAFF}
+\definecolor{Accent}{HTML}{00A9A5}
+
+% -------- 页眉：渐变标题带 + 小标识 --------
+\newcommand{\HeaderBar}[3]{%
+\begin{tikzpicture}[remember picture,overlay]
+  \path (current page.north west) rectangle (current page.north east);
+  \fill[left color=BrandBlue,right color=Sea]
+      ($(current page.north west)+(0,-40pt)$) rectangle
+      ($(current page.north east)+(0,0pt)$);
+  % 标题文字
+  \node[anchor=west,text=white,font=\bfseries\sffamily\Large]
+      at ($(current page.north west)+(72pt,-24pt)$) {#1};
+  % 次级信息（日期/编号）
+  \node[anchor=east,text=white,font=\sffamily\footnotesize]
+      at ($(current page.north east)+(-72pt,-24pt)$) {#2\enspace|\enspace #3};
+\end{tikzpicture}%
+\vspace*{18pt}
+}
+
+% -------- 波浪分隔（呼应 EDU 海浪感觉） --------
+\newcommand{\WaveRule}{%
+\begin{tikzpicture}
+  \draw[line width=3pt,BrandBlue!80]
+    (0,0) .. controls (1,0.35) and (2,-0.35) .. (3,0)
+             .. controls (4,0.35) and (5,-0.35) .. (6,0);
+\end{tikzpicture}
+}
+
+% -------- 信息块（题干/提示/答案） --------
+\tcbset{
+  mycard/.style={
+    enhanced,breakable,sharp corners,
+    colback=CardBG, colframe=BrandBlue!60!DeepSea,
+    boxrule=0.8pt,
+    arc=14pt,
+    left=18pt,right=18pt,top=14pt,bottom=14pt,
+    fonttitle=\bfseries\sffamily\large,
+    coltitle=Ink,
+    overlay={
+      \begin{tcbclipinterior}
+        \fill[BrandBlue!6] (frame.south west) rectangle ($(frame.north east)+(0,-0.6cm)$);
+      \end{tcbclipinterior}
+    }
+  }
+}
+
+% -------- 变量区：按日替换即可 --------
+\def\ProblemTitle{数列极值的一道好题}
+\def\ProblemID{Day 018}
+\def\ProblemDate{\the\year-\the\month-\the\day}
+\def\Hashtag{\#数学每日一题\ \#大白鲨EDU}
+\def\BrandEN{BigWhiteShark EDU}
+\def\BrandCN{大白鲨教育科技有限公司}
+% 是否显示答案：1=显示，0=隐藏
+\def\ShowAnswer{0}
+
+%=========================== 正文 ===========================
+\begin{document}
+\pagestyle{empty}
+\color{Ink}
+
+% 顶部标题带
+\HeaderBar{ \BrandEN }{ \ProblemID }{ \ProblemDate }
+
+% 主卡片：题干
+\begin{tcolorbox}[mycard,title={\ProblemTitle}]
+设实数列 $(a_n)$ 满足：$a_1=1$，且
+\[
+  a_{n+1} = a_n + \frac{1}{n a_n}\qquad (n\ge 1).
+\]
+(1) 证明 $a_n^2$ 单调增加；(2) 求证：存在常数 $C$ 使得 $a_n=\sqrt{2\ln n + C + o(1)}$；\\[2pt]
+(3) 给出一个对 $a_{1000}$ 的三位小数近似。
+\medskip
+
+\textbf{作答提示}：可先考虑 $b_n=a_n^2$ 的增量；再用积分比较估计 $\sum \frac1{n a_n}$。
+\end{tcolorbox}
+
+% 波浪分隔
+\centering\vspace{10pt}\WaveRule\vspace{6pt}
+
+% 次卡片：标签/品牌
+\begin{tcolorbox}[mycard]
+\noindent\textsf{\small \Hashtag}\hfill
+{\small \textsf{\BrandCN}}
+\end{tcolorbox}
+
+% 答案卡片（可开关）
+\ifnum\ShowAnswer=1
+  \begin{tcolorbox}[mycard,title={参考解析（教师稿/发布时可隐藏）}]
+  \textbf{(1)} 由递推式得
+  $a_{n+1}^2-a_n^2=\dfrac{1}{n}+\dfrac{1}{n^2a_n^2}>0$，故单调增。\\
+  \textbf{(2)} 设 $b_n=a_n^2$，则
+  $b_{n+1}-b_n=\dfrac{1}{n}+\dfrac{1}{n^2 b_n}$，累加得
+  $b_n=\ln n + \ln n + O(1)=2\ln n + C + o(1)$。\\
+  \textbf{(3)} 代入数值迭代或用渐近式近似可得 $a_{1000}\approx \sqrt{2\ln 1000 + C}\ (\text{数值略})$。
+  \end{tcolorbox}
+\fi
+
+% 右下角 logo/落款（可替换为公司徽标）
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south east,inner sep=0pt] at ($(current page.south east)+(-64pt,40pt)$) {%
+    \begin{tikzpicture}[scale=0.9]
+      % 简洁的 EDU 波浪角标（可置换为你的 PNG/SVG）
+      \fill[BrandBlue!15,rounded corners=5pt] (0,0) rectangle (3.9,0.9);
+      \draw[line width=2pt,BrandBlue!80]
+        (0.3,0.45) .. controls (0.7,0.85) and (1.1,0.05) .. (1.5,0.45)
+        .. controls (1.9,0.85) and (2.3,0.05) .. (2.7,0.45)
+        .. controls (3.1,0.85) and (3.5,0.05) .. (3.7,0.45);
+      \node[font=\bfseries\sffamily,BrandBlue!80] at (2, -0.3) {EDU};
+    \end{tikzpicture}
+  };
+\end{tikzpicture}
+
+\end{document}
